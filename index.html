@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulário de contato</title>
+</head>
+
+<body>
+    <div class="container">
+    <h1>
+        Formulário de Contato
+    </h1>
+    <h4>Preencha com suas informações pessoais</h4>
+
+    <div class="form">
+    <form action="/enviar" method="post">
+    <label for="nome">Nome:</label><br> <!-- lembrar que todos os forms precisam de label-->
+    <input type="text" id="nome" name="nome" required><br> <!--required significa que vai ser obrigatório para o usuário-->
+
+    <label for="e-mail">E-mail:</label><br>
+    <input type="email" id="e-mail" name="e-mail" required><br>
+
+    <label for="assunto">Assunto</label><br>
+    <input type="text" id="assunto" name="assunto" required><br>
+
+    <label for="mensagem">Escreva aqui sua mensagem:</label><br>
+    <textarea type="text" id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br> <!--textarea define um campo com varias linhas-->
+    </form>
+    </div>
+    <br>
+
+    
+    <button>Enviar</button>
+    <br>
+    
+</div>
+
+<footer>
+    <p>2024 - Feito para teste e estudo - Por Maria Cecília</p>
+</footer>
+</body>
+
+</html>
